@@ -1,0 +1,298 @@
+*{
+    list-style-type: none;
+    text-decoration: none;
+    box-sizing: border-box;
+ 
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+  height: 100px;
+  margin: 30px;
+  font-family: "Open Sans", Arial, sans-serif;
+}
+
+nav {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 30px;
+  border: 1px dotted;
+  width: 800px;
+  margin-top: 20px;
+  font-family: "Open Sans", Arial, sans-serif;
+}
+nav a{
+  color: gray;
+  &:hover{
+    color: black;
+  }
+}
+.hamburgerli{
+  display: none;
+}
+.home a{
+  &:hover{
+    border-color: blue;
+    bottom: 30px;
+  }
+}
+h1{
+    /* text-transform: uppercase; */
+    font-size: 2rem;
+    color: #999;
+    font-family: "Open Sans", Arial, sans-serif;
+}
+h2{
+  background-color: #c99;
+  color: white;
+  width: 380px;
+  text-align: center;
+  padding: 20px;
+  margin-left: 50px;
+  /* font-family: "Open Sans", Arial, sans-serif; */
+}
+.wnv{
+  /* position: absolute;
+  top: 880px; */
+  padding: 30px;
+}
+@media (min-width:320px) and (max-width:1024px){
+  .wnv{
+    display: flex;
+  
+  }
+}
+ul{
+  display: flex;
+  flex-wrap: wrap;
+ justify-content: space-evenly;
+  gap: 30px;
+}
+@media (min-width:320px) and (max-width:1024px){
+  ul{
+    display: flex;
+    /* flex-direction: column; */
+  }
+}
+.list1{
+  display: flex;
+  margin-top: 50px;
+}
+.list1 img{
+  width: 350px;
+}
+@media (min-width:320px) and (max-width:1024px){
+  .list1{
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+.list1 div{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  margin-left: 30px;
+  width: 210px;
+  height: 240px;
+  
+}
+
+
+.list1 div a{
+
+  font-size: larger;
+}
+.list1 div p{
+  color: gray;
+  font-size: large;
+}
+
+.list2{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  background-color: white;
+  gap: 30px;
+}
+@media (min-width:320px) and (max-width:1024px){
+  .list2{
+    display: flex;
+    flex-direction: column;
+  }
+}
+.s1{
+  border: 1px dotted;
+  padding: 20px;
+  width: 300px;
+  height: 350px;
+}
+.s1 p{
+  font-size: large;
+  color: gray;
+}
+.s1 h3{
+  text-transform: uppercase;
+}
+.s1 .ah{
+  padding: 10px;
+  margin-left: 150px;
+}
+@media (min-width:320px) and (max-width:1024px){
+.gallery{
+  display: flex;
+  /* justify-content: space-around; */
+  margin-right: 50px;
+  gap: 150px;
+}
+}
+/* @media (min-width:320px) and (max-width:1024px){ */
+.div{
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  padding-left: 150px;
+  margin: 100px;
+  gap: 50px;
+
+}
+
+.div1{
+  display: flex;
+ gap: 50px;
+}
+section{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  
+}
+section div{
+  max-width:500px;
+ 
+}
+form{
+  display: flex;
+  justify-content: space-evenly;
+}
+form input{
+  width: 400px;
+  padding: 10px;
+  border: none;
+  border-bottom: 1px dotted;
+}
+textarea{
+  width: 400px;
+  border-bottom: 1px dotted;
+}
+form button{
+  padding: 10px;
+  margin-left: 250px;
+}
+@media (min-width:320px) and (max-width:1024px){
+.sr{
+  display: flex;
+  flex-wrap:wrap;
+  gap: 30px;
+  justify-content: center;
+}
+
+.sr div{
+  display: flex;
+  align-items: center;
+  border: 1px dotted;
+  width: 500px;
+  height: 100px;
+  gap: 30px;
+padding: 30px;
+  
+}
+}
+.g1 img{
+  position:absolute;
+
+
+}
+.g1 h4{
+  position:relative;
+  top: 150px;
+  padding-left: 40px;
+  font-size: x-large;
+
+}
+.sr div p{
+  width: 300px;
+}
+.para{
+  padding-left: 200px;
+}
+.footer{
+ position: relative;
+ top: 200px;}
+ iframe{
+  margin: 100px;
+ }
+ .pr{
+  display: flex;
+  align-items: center;
+  width: 100%;
+  gap: 150px;
+ margin-left: 100px;
+ }
+.pr div{
+  width: 500px;
+}
+/* @media (min-width:320px) and (max-width:768px){
+  nav{
+    display: none;
+
+  }
+ 
+  .hamburgerli{
+    display: block !important;
+    font-size:40px;
+
+  }
+    
+} */
+/* @media (min-width:320px) and (max-width:768px){
+  nav.li{
+    display: none;
+  }
+  .checkbtn{
+    display: block;}
+    #check{
+      display: none;
+    } 
+    #check:checked ~ nav{
+      right: 0;
+    }
+     
+  } */
+  @media (min-width:320px) and (max-width:768px){
+    nav{
+      display: flex;
+      position: relative;
+      flex-direction: column;
+     width: 100%;
+     height: 100px;
+     gap: 5px;
+     align-items: center;
+     list-style-type: none;
+     text-decoration: none;
+    
+      
+    }
+   
+    .hamburgerli{
+      display: block !important;
+      font-size:40px;
+  
+    }
+  }
+
+
+  
